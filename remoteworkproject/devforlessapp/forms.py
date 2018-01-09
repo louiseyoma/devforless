@@ -14,10 +14,10 @@ class FormForLogin(forms.Form):
 
 
 class CustomUserCreationForm(forms.Form):
-	username = forms.CharField(label='Enter Username', min_length=4, max_length=150)
-	email = forms.EmailField(label='Email Address')
-	password1 = forms.CharField(label='Enter password', widget=forms.PasswordInput)
-	password2 = forms.CharField(label='Confirm password', widget=forms.PasswordInput)
+	username = forms.CharField(label='Enter your name', min_length=4, max_length=150, widget=forms.TextInput(attrs={'class' : 'form-control white-border', 'id' : 'formGroupExampleInput'}))
+	email = forms.EmailField(label='Email address', required=True, widget=forms.TextInput(attrs={'class' : 'form-control white-border', 'id' : 'formGroupExampleInput'}))
+	password1 = forms.CharField(label='Choose password', widget=forms.TextInput(attrs={'class' : 'form-control white-border', 'id' : 'formGroupExampleInput2'}))
+	password2 = forms.CharField(label='Confirm password', widget=forms.TextInput(attrs={'class' : 'form-control white-border', 'id' : 'formGroupExampleInput2'}))
 
 
 	def clean_username(self):

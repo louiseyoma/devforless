@@ -5,13 +5,13 @@ from django.http import HttpResponseRedirect
 
 
 def home(request):
-    return render(request, 'devsforless/home.html')
+    return render(request, 'devforlessapp/home.html')
 
 def careers(request):
-    return render(request, 'devsforless/careers.html')
+    return render(request, 'devforlessapp/careers.html')
 
 def signup(request):
-    return render(request, 'devsforless/signup.html')
+    return render(request, 'devforlessapp/signup.html')
 
 def login(request):
 
@@ -24,7 +24,7 @@ def login(request):
 			return HttpResponseRedirect('home')
 	else:
 		form = FormForLogin()
-	return render(request, 'devsforless/login.html', {'form': form})
+	return render(request, 'devforlessapp/login.html', {'form': form})
 
 def register(request):
 	if request.method == 'POST':
@@ -36,5 +36,5 @@ def register(request):
 
 	else:
 		f = CustomUserCreationForm()
-	return render(request, 'devsforless/register.html', {'form': f})
+	return render(request, 'devforlessapp/register.html', {'form': f})
 
