@@ -41,7 +41,7 @@
             </div>
             {% block content  %}
                 <form method="POST" action="">
-                 {% csrf_token %} <!--
+                  {% csrf_token %}<!--
                 <div class="form-group" id = "login">
                   <label for="formGroupExampleInput" id = "login-label"><span><i class = "fa fa-user text-white2" style = "margin-right: 20px;"></i></span>Email address</label>
                   <input type="text" class="form-control white-border" id="formGroupExampleInput" placeholder="John Ade">
@@ -58,11 +58,13 @@
                 </div> 
 
                 <div>
-                <button type="submit" class="btn btn-primary btn-loginform text-white">Login</button></div>--> 
+                <button type="submit" class="btn btn-primary btn-loginform text-white">Login</button></div> -->
                 {{ form.as_p }}
                 <input type="submit" />
+
               </form>
             {% endblock  %}
+
          
         </div>
       </div>
@@ -78,14 +80,14 @@
     <div class = "row margin-100">
       <div class = "col-12 col-md-3">
         <img class = "img-small" src ="{% static 'images/logoblue.png' %}">
-        <p>Devsforless is a network of developers, designers and IT professionals all over the world.</p>
-        <a href="">hi@devsforless.com</a>
+        <p>Devforless is a network of developers, designers and IT professionals all over the world.</p>
+        <a href="">hi@devforless.com</a>
       </div>
 
        <div class = "col-12 col-md-3">
         <p class = "title">COMPANY</p>
         <ul class = "list-unstyled">
-          <li><a href="#">Home</a></li>
+          <li><a href="home">Home</a></li>
           <li><a href="#">About Us</a></li>
           <li><a href="#">Blog</a></li>
           <li><a href="#">Terms of Service</a></li>
@@ -97,7 +99,7 @@
         <p class = "title">CONTACT</p>
           <ul class = "list-unstyled">
             <li><b>Address :</b> Suite 700, 6301<br> Ivy Lane, Greenbelt, Maryland</li>
-            <li><b>Email :</b> hi@devsforless.com</li>
+            <li><b>Email :</b> hi@devforless.com</li>
             <li><b>Call :</b> 1 443 631 7208</li>
           </ul>
       </div>
@@ -113,7 +115,7 @@
         </div>
       </div>
     </div>  
-    <div class = "row justify-content-center inc">(c) Devsforless Inc 2017.</div>
+    <div class = "row justify-content-center inc">(c) Devforless Inc 2018.</div>
   </div>
 
 
