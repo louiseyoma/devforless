@@ -1,4 +1,6 @@
 from django import forms
+from django.forms import ModelForm
+from .models import JobPost
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.models import User
 from django.core.exceptions import ValidationError
@@ -52,10 +54,10 @@ class CustomUserCreationForm(forms.Form):
 
 
 
-
-
-
-
+class JobPostForm(forms.ModelForm):
+	class Meta:
+		model = JobPost
+		fields = ['job_title', 'category', 'desired_skills', 'job_description']
 
 
 

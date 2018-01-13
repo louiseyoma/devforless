@@ -7,6 +7,8 @@ urlpatterns = [
     url(r'^home$',views.home),
     url(r'^careers$',views.careers),
     url(r'^signup$',views.register),
+    url(r'^post_job$',views.post_job, name='post_job'),
     url(r'^login/', auth_views.login, name='login'),
+    url(r'^suc$',views.suc),
     
 ]
