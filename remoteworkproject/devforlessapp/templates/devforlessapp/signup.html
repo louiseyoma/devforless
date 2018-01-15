@@ -12,7 +12,7 @@
   <title>Devsforless</title>
   <meta charset = "UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  {% load staticfiles %}
+  {% load static %}
   <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
   <link rel="stylesheet" type="text/css" href="{% static 'font-awesome/css/font-awesome.min.css' %}">
   <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
@@ -31,7 +31,7 @@
   <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a href="login" role = "button" class = "btn btn-nav2 text-white">Log In</a>
+        <a href="{% url 'login' %}" role = "button" class = "btn btn-nav2 text-white">Log In</a>
       </li>
     </ul>
   </div>
@@ -50,8 +50,8 @@
           <div>
               <h3 class = "text-white margin-signup">Create your account</h3>
             </div>
-          <form>
-                <div class="form-group" id = "login">
+          <form action="{% url 'signup' %}" method="post"> {% csrf_token %} {{ form.as_p }}
+                <!--<div class="form-group" id = "login">
                   <label for="formGroupExampleInput" id = "login-label">Enter your name</label>
                   <input type="text" class="form-control white-border" id="formGroupExampleInput" placeholder="John Ade">
                 </div>
@@ -63,7 +63,7 @@
                   <label for="formGroupExampleInput2" id = "login-label">Choose password</label>
                   <input type="text" class="form-control white-border" id="formGroupExampleInput2" placeholder="********">
 
-                </div>
+                </div>-->
                 <div>
                 <button type="submit" class="btn btn-primary btn-loginform text-white">Register</button>
                 </div> 
@@ -76,6 +76,7 @@
                   </div>
                   
                 </div> 
+                <!--<input type="submit" value="Register"/>-->
 
     
 

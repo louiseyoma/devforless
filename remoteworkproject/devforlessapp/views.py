@@ -12,7 +12,16 @@ def careers(request):
     return render(request, 'devforlessapp/careers.html')
 
 def signup(request):
-    return render(request, 'devforlessapp/signup.html')
+	if request.method == 'POST':
+		f = CustomUserCreationForm(request.POST)
+		if f.is_valid():
+			f.save()
+			#messages.success(request, 'Account created successfully')
+			return HttpResponseRedirect('signup')
+	else:
+		f = CustomUserCreationForm()
+	return render(request, 'devforlessapp/signup.html', {'form': f})
+
 
 
 def suc(request):
@@ -56,6 +65,8 @@ def login(request):
 		form = FormForLogin()
 	return render(request, 'devforlessapp/login.html', {'form': form})
 
+
+'''
 def register(request):
 	if request.method == 'POST':
 		f = CustomUserCreationForm(request.POST)
@@ -67,4 +78,4 @@ def register(request):
 	else:
 		f = CustomUserCreationForm()
 	return render(request, 'devforlessapp/register.html', {'form': f})
-
+'''

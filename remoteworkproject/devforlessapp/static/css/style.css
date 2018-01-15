@@ -45,38 +45,13 @@
     padding: 25px 0;
 }
 */
-.fixed-top {
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    z-index: 1030;
-}
+
 .navbar-brand img {
 	width: 150px;
 }
-.navbar-blue {
-	background-color: #4781CA;
-}
-.white {
-	color: #fff;
-}
-.sidebar {
-	background-color: #F7F7F7;
-	top: 58px;
-    bottom: 0;
-    left: 0;
-    z-index: 1000;
-    padding: 10px 50px;
-    overflow-x: hidden;
-    overflow-y: auto;
-    border-right: 1px solid #eee;
-    position: fixed;
-}
-.main {
-	padding: 0px 50px;
-	margin-top: 80px;
-}
+
+
+
 #introduction {
 	background: linear-gradient(90deg, #041D4F, rgba(255,255,255,0.5)), url(../images/career-image.jpg) 0% 10%/ cover;
 	width: auto;
@@ -98,17 +73,20 @@
 	margin-top: -30px;*/
 }
 #feature {
-	
+	margin-top: -30px;
+}
+.fill-viewport-home {
+	min-height: 50vh
 }
 .fill-viewport {
-	min-height: 100vh
+	min-height: 92vh
 }
 /*.text-white {
 	color: white;
 }*/
 
 .intro {
-	padding-top: 250px;
+	padding-top: 50px;
 }
 .center {
 	padding-top: 100px;
@@ -116,7 +94,6 @@
 
 .catch-phrase {
 	margin-top: 100px;
-	border: 1px solid #56CCF2;
 	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.35);
     -moz-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.35);
     -webkit-box-shadow:  0px 0px 20px rgba(0, 0, 0, 0.35);
@@ -124,21 +101,18 @@
 }
 .catch-phrase2 {
 	margin-top: 100px;
-	border: 1px solid #F2C94C;
 	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.35);
     -moz-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.35);
     -webkit-box-shadow:  0px 0px 20px rgba(0, 0, 0, 0.35);
 }
 .catch-phrase3 {
 	margin-top: 100px;
-	border: 1px solid #27AE60;
 	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.35);
     -moz-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.35);
     -webkit-box-shadow:  0px 0px 20px rgba(0, 0, 0, 0.35);
 }
 .catch-phrase4 {
 	margin-top: 100px;
-	border: 1px solid #BB6BD9;
 	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.35);
     -moz-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.35);
     -webkit-box-shadow:  0px 0px 20px rgba(0, 0, 0, 0.35);
@@ -168,7 +142,8 @@
 }
 .btn-custom {
 	background-color: #31D676;
-	margin-top: 50px
+	margin-top: 50px;
+	margin-bottom: 50px;
 }
 .btn-custom2 {
 	background-color: #31D676;
@@ -178,11 +153,17 @@
 	background-color: #fff;
 	padding: 5px 10px 5px 10px;
     margin-top: 3px;
+    background-color: transparent;
+    border: 2px solid #fff;
+}
+.btn-nav:hover {
+	background-color: #31D676;
 }
 .btn-nav2 {
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     padding: 5px 10px 5px 10px;
     margin-top: 3px;
+
 }
 .text-dark {
 	margin-bottom: 50px;
@@ -200,19 +181,7 @@
 .fa{
 	color: #31D676;
 }
-#fa-black {
-	color: #4f4f4f;
-}
-#fa-black2 {
-	color: #4f4f4f;
-	margin-right: 20px;
-}
-.font-small {
-	font-size: small;
-}
-#fa-white {
-	color: #fff;
-}
+
 .icons {
 	margin: 150px 0px  50px  0px;
 }
@@ -251,7 +220,7 @@ select.white-border:focus {
     /* padding: 50px; */
     margin-top: 100px;
     /* padding-top: 100px; */
-    padding: 50px 100px 50px 30px;;
+    padding: 50px 30px 50px 30px;;
     /* padding-bottom: 200px; */
 }
 #home-join {
@@ -263,22 +232,23 @@ select.white-border:focus {
 
 
 #footer {
-	background-color: rgba(0, 192, 252, 0.1);
+	background-color: #fffdfd;
 }
-
+#footer p {
+	color: #777777;
+}
+#footer a {
+	color: #777777;
+}
+.fo {
+	color: #777777;
+}
 .margin-100 {
 	padding-top: 100px;
 }
 .margin20 {
 	margin-top: 20px;
 }
-.margin50 {
-	margin: 10px 60px 10px 60px;
-}
-.margin-bottom {
-	margin-bottom: 30px;
-}
-
 .margin-login {
     margin-bottom: 50px;
     margin-top: -100px;
@@ -307,54 +277,11 @@ select.white-border:focus {
     border: transparent;
     width: -webkit-fill-available;
 }
-#btn-search {
-	color: #fff;
-    background-color: #31D676;
-    font-size: small;
-}
-#searchbar {
-	height: fit-content;
-	align-self: center;
-}
-.user-picture img {
-	width: 200px;
-	height: 200px;
-	margin: auto;
-	top: 0;
-	left: 0;
-	right: 0;
-	border: 1px solid #31D676;
-}
-.nav-user-img {
-	width: 30px;
-	height: 30px;
-}
-.user-name {
-	margin-bottom: 20px;
-}
-#profile-search {
-	background-color: white;
-    border-radius: 5px;
-    width: -webkit-fill-available;
-    font-size: small;
-}
-.user-info {
-	margin: 10px 0px 0px 0px;
-}
-.m-right {
-	margin-right: 10px;
-}
-.exp-details {
-	margin-left: 50px;
-	font-size: 0.8rem;
-}
-.btnskill {
-	margin: 5px;
-	font-size: small;
-}
-.portfolio-image {
-	width: inherit;
-}
+
+
+
+
+
 
 
 @media (min-width: 20px) and (max-width: 450px) {

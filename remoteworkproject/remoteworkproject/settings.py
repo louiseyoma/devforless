@@ -125,4 +125,10 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+STATICFILES_DIRS = (
+    #os.path.join(BASE_DIR, 'static'), Error: static_root settings should not be in here
+)
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
 LOGIN_REDIRECT_URL = '/account'
