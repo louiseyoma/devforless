@@ -17,7 +17,7 @@ def signup(request):
 		if f.is_valid():
 			f.save()
 			#messages.success(request, 'Account created successfully')
-			return HttpResponseRedirect('signup')
+			return HttpResponseRedirect('signup_suc')
 	else:
 		f = CustomUserCreationForm()
 	return render(request, 'devforlessapp/signup.html', {'form': f})
@@ -29,6 +29,8 @@ def suc(request):
 
 
 
+def signup_suc(request):
+	return render(request, 'devforlessapp/signup_success.html')
 
 
 
