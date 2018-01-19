@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link rel="stylesheet" href="css/style.css">
+
+<head>
+  <title>Devsforless</title>
+  <meta charset = "UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {% load staticfiles %}
+  <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'font-awesome/css/font-awesome.min.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap-grid.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap-grid.min.css' %}">
+</head>
+
+<body>
+
+
+
+<!--<section id = "introduction">-->
+ <nav class="navbar navbar-toggleable-md navbar-blue fixed-top">
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand" href="#"><img src="{% static 'images/logo-v2.png' %}"></a>
+  <div class="collapse navbar-collapse justify-content-around" id="navbarNavDropdown">
+    <form class="input-group my-2 my-lg-0 col-12 col-md-6" id = "searchbar">
+      <input class="form-control mr-sm-2" type="text" placeholder="Search talents" id = "profile-search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit" id = "btn-search">Search</button>
+    </form>
+    <ul class="navbar-nav align-items-center">
+
+      <li class="nav-item">
+        <a href="#"><i class = "fa fa-bell" id = "fa-white"></i></a>
+      </li>
+      <li class="nav-item">
+        <a href="#" ><i class = "fa fa-envelope" id = "fa-white"></i></a>
+      </li>
+     <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle text-white" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="{% static 'images/user.jpg' %}" class = "rounded-circle img-center nav-user-img">
+        
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="#">Edit profile</a>
+          <a class="dropdown-item" href="#">Terms of service</a>
+          <a class="dropdown-item" href="#">Privacy policy</a>
+          <a class="dropdown-item" href="#">Sign out</a>
+        </div>
+      </li>
+    </ul>
+    
+  </div>
+</nav>
+<!--</section>-->
+
+
+
+<section>
+  <div class = "container-fluid">
+      <div class = "row align-items-center">
+        <nav class = "col-12 col-md-4 sidebar">
+        
+        <section>
+          <div class = "user-info">
+          <h3 class = "user-name text-center ">Gbolahan Fawale</h3>
+          <p class = "user-picture margin50"><img src="{% static 'images/user.jpg' %}" class = "rounded-circle img-center"></p>
+          <p class = "user-title text-center title margin50">UI/UX Designer</p><span><a href="#"><i class = "fa fa-pencil pull-right"></i></a></span>
+          <p class = "user-location-info font-small"><i class = "fa fa-map-marker m-right"></i>Owerri, Nigeria</p>
+
+          <hr>
+          <div class = "user-summary text-justify font-small">
+            <p>I am User Interface Designer with experience in web and graphics design. I have been designing websites for about 4 years. I am passioante about solving problems across digital platforms as well as building the best user experience and intuitive designs for digital products.</p>
+          </div>
+          <hr>
+          <div class = "user-contact">
+            <ul class = "list-unstyled d-flex justify-content-around font-small">
+              <li><a href=""><i class = "fa fa-facebook" id = "fa-black"></i></a></li>
+              <li><a href=""><i class = "fa fa-twitter" id = "fa-black"></i></a></li>
+              <li><a href=""><i class = "fa fa-linkedin" id = "fa-black"></i></a></li>
+              <li><a href=""><i class = "fa fa-behance" id = "fa-black"></i></a></li>
+              <li><a href=""><i class = "fa fa-github" id = "fa-black"></i></a></li>
+            </ul>
+          </div>
+          <hr>
+          <div class = "registration-info text-center font-small">
+            <span class = "reg-term title">MEMBER SINCE :</span>
+            <span class = "registration-date">January 2018</span></div>
+        </div>
+        </section>
+      </nav>
+    
+
+    
+   <!-- <div class = "col-12 col-md-8 main">
+    
+    <section class = "">
+        <div>
+          <h4>Experience</h4>
+        </div>
+        <div>1</div>
+        <div>1</div>
+        <div>1</div>col-sm-9 offset-sm-3 col-md-10 offset-md-2 pt-3
+      </section>
+      
+    </div>-->
+    
+     <div class = "col-12 offset-2 col-md-8 offset-md-4 main">
+     
+        <section class = "row">
+
+      <div class = "col-12 col-md-12 " id = "Experience">
+        <div>
+
+         <h5 class = "search-title margin-bottom"><i class = "fa fa-institution" id = "fa-black2"></i>Experience</h5><p class = "exp-date  pull-right">2017 - present</p>
+         <p class = "text-green">Freelance UI/UX Designer</p>
+         <p>LinuxJobber</p>
+            <div class = "exp-details margin-bottom">
+            <p>Created the user experience for web applications.</p>
+            <p>Developed the creative concepts for web applications.</p>
+            <p>Built the wireframes for web applications.</p>
+            <p>Created the interactive prototypes for web applications.</p>
+            </div>
+        </div>
+
+        <div>
+         <p class = "exp-date pull-right">2017 - present</p>
+         <p class = "text-green">Freelance UI/UX Designer</p>
+         <p>LinuxJobber</p>
+            <div class = "exp-details">
+            <p>Created the user experience for web applications.</p>
+            <p>Developed the creative concepts for web applications.</p>
+            <p>Built the wireframes for web applications.</p>
+            <p>Created the interactive prototypes for web applications.</p>
+            </div>
+        </div>
+
+        <hr>
+
+         <div>
+         <h5 class = "search-title margin-bottom"><i class = "fa fa-cogs" id = "fa-black2"></i>Skills & Technologies</h5>
+          <div class = "skills">
+            <button class = "btn btn-grey btnskill">User Interface Design</button>
+            <button class = "btn btn-grey btnskill">User Experience Design</button>
+            <button class = "btn btn-grey btnskill">Web Design</button>
+            <button class = "btn btn-grey btnskill">Graphics Design</button>
+            <button class = "btn btn-grey btnskill">Microsoft Office</button>
+            <button class = "btn btn-grey btnskill">Logo Design</button></div>
+        </div>
+
+         <hr>
+
+
+          <div>
+         <h5 class = "search-title margin-bottom"><i class = "fa fa-graduation-cap" id = "fa-black2"></i>Education</h5>
+          <p class = "school title">Federal University of Technology</p>
+          <p class = "year">2011 -2015</p>
+          <p class = "course">Agricultural Economics and Extension Technology</p>
+
+         <hr>
+
+
+      </div><!--end of main sidebar contents-->
+
+      <div>
+         <h5 class = "search-title margin-bottom"><i class = "fa fa-briefcase" id = "fa-black2"></i>Portfolio</h5>
+         <div class = "row text-center">
+          <div class = "col-12 col-md-4">
+            <img src="images/pay.png" class = "portfolio-image">
+            <p class = "portfolio-title text-green">Banner image</p>
+          </div>
+          <div class = "col-12 col-md-4"><img src="{% static 'images/pay.png' %}" class = "portfolio-image">
+            <p class = "portfolio-title text-green">Banner image</p>
+          </div>
+
+          <div class = "col-12 col-md-4"><img src="{% static 'images/pay.png' %}" class = "portfolio-image">
+            <p class = "portfolio-title text-green">Banner image</p>
+          </div>
+
+          <div class = "col-12 col-md-4">
+            <img src="{% static 'images/pay.png' %}" class = "portfolio-image">
+            <p class = "portfolio-title text-green">Banner image</p>
+          </div>
+          <div class = "col-12 col-md-4"><img src="{% static 'images/pay.png' %}" class = "portfolio-image">
+            <p class = "portfolio-title text-green">Banner image</p>
+          </div>
+
+          <div class = "col-12 col-md-4"><img src="{% static 'images/pay.png' %}" class = "portfolio-image">
+            <p class = "portfolio-title text-green">Banner image</p>
+          </div>
+        </div>
+
+         <hr>
+
+
+      </div>
+       
+      </section>
+      <section id = "footer">
+  <div class = "container">
+    <div class = "row margin-100">
+     
+    </div>  
+    <div class = "row justify-content-center inc title">(c) Devsforless Inc 2017.</div>
+  </div>
+
+
+</section>
+   
+    </div>
+
+
+
+  </div><!--end of main row-->
+  </div><!--end of main container-->
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" src="{% static 'js/bootstrap.min.js' %}"></script>
+
+  
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+
+</body>
+</html>

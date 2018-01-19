@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link rel="stylesheet" href="css/style.css">
+
+<head>
+  <title>Devsforless</title>
+  <meta charset = "UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {% load static %}
+  <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'font-awesome/css/font-awesome.min.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+</head>
+
+<body>
+
+
+
+<section id = "introduction">
+ <nav class="navbar navbar-toggleable-md navbar-light">
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand" href="home"><img src="{% static 'images/logo.png' %}"></a>
+  <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link text-white" href="home">Home <span class="sr-only">(current)</span></a>
+      </li>
+      
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle text-white" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Company
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="#">About us</a>
+          <a class="dropdown-item" href="#">Blog</a>
+        </div>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link text-white" href="careers">Careers</a>
+      </li>
+      <li class="nav-item">
+        <a href="login" role = "button" class = "btn btn-nav text-white">Log In</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" role = "button" class = "btn btn-nav text-white">Post a Job</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+  <div class = "container">
+
+    <div class = "banner">
+      <div class = "row fill-viewport-home text-center">
+        <div class = "intro col-12 col-md-12">
+          <h3 class = "intro-text text-white">Support the Mission to bring Remote Software Development <br>
+            jobs to your Local Community</h3>
+          <a href="signup" role = "button" class = "btn btn-custom text-white">JOIN THIS MISSION</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section id = "welcome-note">
+  <div class = "container">
+    <div class = "contact-section">
+      <div class = "row text-center">
+        <div class = "col-12 col-md-12">
+        <p class = "text-white welcome">“ More than ever we need a platform that adds billions to the economy & creates jobs. Thankfully, that platform is here. “</p>
+      </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+<section id = "features">
+  <div class = "container">
+    <div class = "catch-phrase">
+      <div class = "row text-center flexrow">
+        <div class ="top-line col-12 col-md-6 align-content-center" >
+        <div class = "center">
+            <h4 class = "heading1">Why Join The Mission?</h4>
+            <p>Devforless offers you the opportunity earn with your skills and also contribute to your community by empowering others.</p>
+          </div>
+        </div>
+        <div class ="top-line col-12 col-md-6 " >
+          <div class = "side-img">
+            <img class = "img-fluid" src="{% static 'images/why.png' %}">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section id = "features">
+  <div class = "container">
+    <div class = "catch-phrase2">
+      <div class = "row text-center">
+        <div class ="top-line col-12 col-md-6 " >
+          <div class = "side-img">
+            <img class = "img-fluid" src="{% static 'images/contribute.png' %}">
+          </div>
+        </div>
+         <div class ="top-line col-12 col-md-6">
+        <div class = "center">
+            <h4 class = "heading2">How Do I Contribute?</h4>
+            <p>You can contribute by first believing in our mission, <br> then sign up and spread the word.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id = "features">
+  <div class = "container">
+    <div class = "catch-phrase3">
+      <div class = "row text-center">
+         <div class ="top-line col-12 col-md-6 " >
+        <div class = "center">
+            <h4 class = "heading3">How Do I Get Paid?</h4>
+            <p>Payment is made at the completion of each project.<br> No hidden charges, No commission.</p>
+          </div>
+        </div>
+         <div class ="top-line col-12 col-md-6 " >
+          <div class = "side-img">
+            <img class = "img-fluid" src="{% static 'images/pay.png' %}">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id = "features">
+  <div class = "container">
+    <div class = "catch-phrase4">
+      <div class = "row text-center">
+
+        <div class ="top-line col-12 col-md-6 " >
+          <div class = "side-img">
+            <img class = "img-fluid" src="{% static 'images/skill.png' %}">
+          </div>
+        </div>
+        <div class ="top-line col-12 col-md-6 " >
+        <div class = "center">
+            <h4 class = "heading4">Are My Skills Good Enough?</h4>
+            <p>We verify the skillset and experience of all professionals on our platform. <br> Once you are verified, you will be matched to jobs.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id = "home-join">
+  <div class = "container">
+    <div class = "contact-section">
+      <div class = "row text-center">
+        <div class = "col-12 col-md-12">
+        <h3 class = "text-dark">This is the opportunity to contribute to the socio-economic development of your community, serve selflessly and wholeheartedly with your Gifts, Skills and Talents.</h3>
+        <a href="signup" role = "button" class = "btn btn-custom2 text-white join">Join The Movement</a>
+      </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section id = "footer">
+  <div class = "container">
+    <div class = "row margin-100">
+      <div class = "col-12 col-md-3">
+        <img class = "img-small" src ="images/logoblue.png">
+        <p>Devsforless is a network of developers, designers and IT professionals all over the world.</p>
+        <a href="">hi@devforless.com</a>
+      </div>
+
+       <div class = "col-12 col-md-3">
+        <p class = "title">COMPANY</p>
+        <ul class = "list-unstyled">
+          <li><a href="home">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Terms of Service</a></li>
+           <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+
+       <div class = "col-12 col-md-3">
+        <p class = "title">CONTACT</p>
+          <ul class = "list-unstyled">
+            <li>Address :Suite 700, 6301<br> Ivy Lane, Greenbelt, Maryland</li>
+            <li>Email : hi@devforless.com</li>
+            <li>Call : 1 443 631 7208</li>
+          </ul>
+      </div>
+
+       <div class = "col-12 col-md-3">
+        <div class = "">
+          <p class = "title">Social Media</p>
+         <a href=""><i class = "fa fa-facebook-square fo"></i></a>
+          <a href=""><i class = "fa fa-twitter-square fo"></i></a>
+          <a href=""><i class = "fa fa-instagram fo"></i></a>
+          <a href=""><i class = "fa fa-linkedin-square fo"></i></a>
+          <a href=""><i class = "fa fa-google-plus fo"></i></a>
+        </div>
+      </div>
+    </div>  
+    <div class = "row justify-content-center inc">(c) Devforless Inc 2018.</div>
+  </div>
+
+
+</section>
+
+  
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+
+</body>
+</html>
